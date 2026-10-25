@@ -17,6 +17,7 @@ const jakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://quantumadvisorypartners.in'),
   title: 'Quantum Advisory Partners | Strategic Finance & Business Advisory',
   description:
     'Quantum Advisory Partners helps Indian businesses identify opportunities, improve financial performance, strengthen capital decisions and build the operating discipline needed for sustainable growth.',
