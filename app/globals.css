@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 221 42% 18%;
+    --card: 0 0% 100%;
+    --card-foreground: 221 42% 18%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 221 42% 18%;
+    --primary: 224 76% 48%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 220 23% 96%;
+    --secondary-foreground: 221 42% 18%;
+    --muted: 220 23% 96%;
+    --muted-foreground: 215 19% 35%;
+    --accent: 224 100% 97%;
+    --accent-foreground: 221 42% 18%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 218 23% 91%;
+    --input: 218 23% 91%;
+    --ring: 224 76% 48%;
+    --radius: 0.875rem;
+    --chart-1: 224 76% 48%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 35 92% 50%;
+    --chart-4: 256 67% 56%;
+    --chart-5: 142 71% 45%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-white text-[#1B2A41];
+    font-family: "Inter", system-ui, sans-serif;
+    font-weight: 400;
+  }
+  ::selection {
+    background: #1D4ED8;
+    color: white;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+  }
+  .font-body {
+    font-family: "Inter", system-ui, sans-serif;
+  }
+  .text-balance {
+    text-wrap: balance;
+  }
+  .prose-measure {
+    max-width: 65ch;
+  }
+  .shadow-soft {
+    box-shadow: 0 8px 30px rgba(11, 31, 58, 0.08);
+  }
+  .shadow-soft-lg {
+    box-shadow: 0 16px 50px rgba(11, 31, 58, 0.12);
+  }
+  .reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+      transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .reveal-delay-1 {
+    transition-delay: 0.08s;
+  }
+  .reveal-delay-2 {
+    transition-delay: 0.16s;
+  }
+  .reveal-delay-3 {
+    transition-delay: 0.24s;
+  }
+  .reveal-delay-4 {
+    transition-delay: 0.32s;
+  }
+}
+
+@layer base {
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: #0B1F3A;
+  }
+}
